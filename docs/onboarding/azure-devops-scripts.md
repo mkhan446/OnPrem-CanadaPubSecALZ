@@ -43,12 +43,12 @@ After installation:
 
 - Sign-in with a Personal Access Token (PAT):
   <https://learn.microsoft.com/azure/devops/cli/log-in-via-pat>. For example:  
-  `az devops login --organization https://dev.azure.com/[DEVOPS-ORG]`
+  `az devops login --organization http://devops/[DEVOPS-ORG]`
 
 Optionally, you may also want to perform the following steps:
 
 - Set the default Azure DevOps organization and project. For example:  
-  `az devops configure --defaults project=[DEVOPS-PROJECT] organization=https://dev.azure.com/[DEVOPS-ORG]`
+  `az devops configure --defaults project=[DEVOPS-PROJECT] organization=http://devops/[DEVOPS-ORG]`
 
 - Verify the default values are set correctly. For example:  
   `az devops configure --list`
@@ -218,7 +218,7 @@ Next, edit the newly created file, using the guidance in the following table.
 | DEVOPS_MGMT_GROUP_NAME | Azure AD root management group name. | Tenant Root Group
 | DEVOPS_SP_NAME | Azure service principal name. The service principal has Owner RBAC at the tenant root scope. | spn-azure-platform-ops
 | DEVOPS_SG_NAME | Azure security group name for 'Owner` RBAC subscription, network, and logging | alz-owners
-| DEVOPS_ORG | Azure DevOps organization URL. | <https://dev.azure.com/DevOpsOrgName>
+| DEVOPS_ORG | Azure DevOps organization URL. | <http://devops/DevOpsOrgName>
 | DEVOPS_PROJECT_NAME | Azure DevOps project name. | CanadaPubSecALZ
 | DEVOPS_REPO_NAME_OR_URL | Azure DevOps or GitHub repository name or URL. | CanadaPubSecALZ
 | DEVOPS_REPO_TYPE | Repository type. Can be `tfsgit` or `github`. | tfsgit

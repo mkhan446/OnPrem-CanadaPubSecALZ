@@ -13,7 +13,7 @@ pr: none
 
 variables:
 - name: devops-org-name
-  value: ${{ replace(replace(variables['System.CollectionUri'], 'https://dev.azure.com/' , ''), '/', '') }}
+  value: ${{ replace(replace(variables['System.CollectionUri'], 'http://devops/' , ''), '/', '') }}
 - name: logging-config-directory
   value: $(System.DefaultWorkingDirectory)/$(loggingPathFromRoot)/${{ variables['devops-org-name'] }}-${{ variables['Build.SourceBranchName'] }}
 - name: identity-config-directory

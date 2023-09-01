@@ -29,7 +29,7 @@ pr: none
 
 variables:
 - name: devops-org-name
-  value: ${{ replace(replace(variables['System.CollectionUri'], 'https://dev.azure.com/' , ''), '/', '') }}
+  value: ${{ replace(replace(variables['System.CollectionUri'], 'http://devops/' , ''), '/', '') }}
 - name: environment
   value: ${{ variables['devops-org-name'] }}-${{ variables['Build.SourceBranchName'] }}
 - name: logging-config-directory

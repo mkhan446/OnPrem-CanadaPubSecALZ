@@ -21,7 +21,7 @@ REM Azure security group name for 'Owner` RBAC subscription, network, and loggin
 set DEVOPS_SG_NAME=alz-owners
 
 REM Azure DevOps organization URL
-set DEVOPS_ORG=https://dev.azure.com/ocag148outlook
+set DEVOPS_ORG=http://devops/ocag148outlook
 
 REM Azure DevOps project name (prefer no spaces)
 set DEVOPS_PROJECT_NAME=CanadaPubSecALZ
